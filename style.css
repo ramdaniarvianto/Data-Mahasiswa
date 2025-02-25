@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 3rem;
+    border-radius: .5rem;
+}
+
+body {
+    font-family: 'Bricolage Grotesque';
+    background-color: aliceblue;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* LOGOUT BTN */
+.logout {
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    color: #0075FF;
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+}
+.logout:hover {
+    text-decoration: none;
+    background-color: #F1F1F1;
+}
+.logout::selection {
+    background-color: transparent;
+}
+/* AKSI */
+.ubah {
+    color: #0075FF;
+}
+.hover:hover {
+    color: royalblue;
+}
+.hapus {
+    color: crimson;
+}
+.hapus:hover {
+    color: red;
+}
+
+/* NAV */
+nav {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    color: white;
+    background-color: #0075FF;
+}
+nav form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav form p::selection {
+    background-color: transparent;
+}
+
+/* MAIN */
+main {
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* MAIN | WELCOME */
+main .welcome {
+    padding: 4px 8px;
+    color: #0075FF;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+main .welcome::selection {
+    background-color: transparent;
+}
+
+/* MAIN | H1 */
+main h1::selection {
+    background-color: transparent;
+}
+
+/* MAIN | SEARCH */
+main .search form::selection {
+    background-color: transparent;
+}
+
+main .search input, button {
+    padding: .5rem;
+    border: none;
+}
+main .search button::selection {
+    background-color: transparent;
+}
+
+main .search input {
+    outline: 2px solid #DDD;
+    border-radius: .5rem 0 0 .5rem;
+}
+main .search input:hover {
+    outline: 2px solid #0075FF;
+}
+main .search input:hover::placeholder {
+    color: #0075FF;
+}
+main .search input:focus {
+    outline: 2px solid #0075FF;
+}
+main .search input:focus::placeholder {
+    color: #0075FF;
+}
+
+main .search button {
+    padding: .5rem .8rem;
+    margin-left: 2px;
+    outline: 2px solid #0075FF;
+    color: white;
+    background-color: #0075FF;
+    border-radius: 0 .5rem .5rem 0;
+}
+main .search button:hover {
+    outline: 2px solid royalblue;
+    background-color: royalblue;
+}
+
+/* MAIN | TAMBAH */
+main .tambah a {
+    padding: .4rem 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #0075FF;
+    border-radius: .5rem;
+}
+main .tambah a:hover {
+    background-color: royalblue;
+}
+main .tambah::selection {
+    background-color: transparent;
+}
+
+/* MAIN | PAGINATION */
+main .pagination a {
+    padding: .4rem 1rem;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #0040DD66;
+    border-radius: 4px;
+}
+main .pagination a:hover {
+    text-decoration: none;
+    background-color: #0075FF;
+}
+
+main .pagination a.pagination-aktif {
+    text-decoration: none;
+    background-color: #0075FF;
+}
+
+main .pagination a.move {
+    background-color: #0075FF;
+}
+
+main .pagination::selection {
+    background-color: transparent;
+}
+main .pagination a::selection {
+    background-color: transparent;
+}
+
+/* MAIN | TABLE */
+main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main table tr th, td {
+    padding: 1rem;
+    color: black;
+}
+
+main table tr:nth-of-type(2n) {
+    background-color: #0075FF11;
+}
+
+main table tr th {
+    color: white;
+    background-color: #0075FF;
+}
+main table tr th:first-child {
+    border-radius: .5rem 0 0 .5rem;
+}
+main table tr th:last-child {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+main table tr .td-center {
+    text-align: center;
+}
+
+main table tr td a {
+    color: black;
+}
+
+main table tr th::selection {
+    background-color: transparent;
+}
+main table tr td img::selection {
+    background-color: transparent;
+}
+main table tr .btn-aksi::selection {
+    background-color: transparent;
+}
+main table tr .btn-aksi a::selection {
+    background-color: transparent;
+}
