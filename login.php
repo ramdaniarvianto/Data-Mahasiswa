@@ -70,11 +70,11 @@ if ( isset($_POST["login"]) ) {
             <div class="form-wrap">
                 <div class="form">
                     <p>Username</p>
-                    <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" required>
+                    <input type="text" name="username" id="username" placeholder="Masukkan Username" autocomplete="off" required>
                 </div>
                 <div class="form">
                     <p>Password</p>
-                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required>
+                    <input type="password" name="password" id="password" placeholder="Masukkan Password" autocomplete="off" required>
                 </div>
                 <div class="check">
                     <input type="checkbox" name="remember" id="remember"> <label for="remember">Remember me</label>

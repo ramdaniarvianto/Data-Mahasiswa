@@ -45,15 +45,15 @@ if ( isset($_POST["register"]) ) {
             <div class="form-wrap">
                 <div class="form">
                     <p>Username</p>
-                    <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" required>
+                    <input type="text" name="username" id="username" placeholder="Masukkan Username" autocomplete="off" required>
                 </div>
                 <div class="form">
                     <p>Password</p>
-                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required>
+                    <input type="password" name="password" id="password" placeholder="Masukkan Password" autocomplete="off" required>
                 </div>
                 <div class="form">
                     <p>Confirm Password</p>
-                    <input type="password" name="password2" id="password2" placeholder="Password" autocomplete="off" required>
+                    <input type="password" name="password2" id="password2" placeholder="Masukkan Password Sekali Lagi" autocomplete="off" required>
                 </div>
             </div>
             <div class="cta">
