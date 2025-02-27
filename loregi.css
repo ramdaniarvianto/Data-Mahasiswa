@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Bricolage Grotesque';
 }
 
 img {
@@ -17,7 +18,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Bricolage Grotesque';
     background-color: aliceblue;
 }
 
