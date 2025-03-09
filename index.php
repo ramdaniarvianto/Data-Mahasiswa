@@ -97,14 +97,14 @@ if ( isset($_POST["logout"]) ) {
                 <?php $no = $awalData + 1; ?>
                 <?php foreach ( $mahasiswa as $mhs ) : ?>
                 <tr>
-                    <td class="td-center"><?= $no; ?></td>
-                    <td class="td-center"><img src=".image/<?= $mhs["gambar"]; ?>"></td>
-                    <td><?= $mhs["nama"]; ?></td>
-                    <td class="td-center"><?= $mhs["nim"]; ?></td>
-                    <td class="td-center"><?= $mhs["prodi"]; ?></td>
-                    <td class="td-center"><?= $mhs["semester"]; ?></td>
-                    <td><?= $mhs["email"]; ?></td>
-                    <td class="td-center btn-aksi">
+                    <td data-cell="No" class="td-center"><?= $no; ?></td>
+                    <td data-cell="Gambar" class="td-center"><img src=".image/<?= $mhs["gambar"]; ?>"></td>
+                    <td data-cell="Nama"><?= $mhs["nama"]; ?></td>
+                    <td data-cell="NIM" class="td-center"><?= $mhs["nim"]; ?></td>
+                    <td data-cell="Prodi" class="td-center"><?= $mhs["prodi"]; ?></td>
+                    <td data-cell="Semester" class="td-center"><?= $mhs["semester"]; ?></td>
+                    <td data-cell="Email"><?= $mhs["email"]; ?></td>
+                    <td data-cell="Aksi" class="td-center btn-aksi">
                         <a href="ubah.php?id=<?= $mhs["id"]; ?>" class="ubah"><i class="fa-regular fa-pen-to-square"></i>Edit</a>&nbsp;
                         <a href="hapus.php?id=<?= $mhs["id"]; ?>" class="hapus" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="fa-regular fa-trash-can"></i>Delete</a>
                     </td>

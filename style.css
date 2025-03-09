@@ -232,3 +232,71 @@ main table tr .btn-aksi::selection {
 main table tr .btn-aksi a::selection {
     background-color: transparent;
 }
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 576px) {
+    img {
+        width: 2rem;
+        border-radius: .3rem;
+    }
+
+    /* NAV */
+    nav {
+        position: static;
+        padding: 1rem;
+    }
+    nav form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav form p:last-child {
+        order: 1;
+    }
+    nav form p:first-child {
+        order: 2;
+    }
+
+    /* MAIN */
+    main {
+        padding: 1rem;
+        margin: .5rem;
+    }
+
+    /* MAIN | SEARCH */
+    main .search {
+        width: 100%;
+    }
+
+    main .search form {
+        width: 100%;
+        display: flex;
+        gap: .5rem;
+    }
+
+    main .search form input {
+        width: 100%;
+    }
+
+    /* MAIN | PAGINATION */
+    main .pagination a {
+        padding: .4rem .8rem;
+    }
+
+    /* MAIN | TABLE */
+    main table th {
+        display: none;
+    }
+
+    main table td {
+        padding: 0 .3rem;
+        margin: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    main table td::before {
+        content: attr(data-cell) ": ";
+        margin-right: .5rem;
+    }
+}

@@ -138,3 +138,14 @@ main form .button button:hover {
 main form .button button::selection {
     background-color: transparent;
 }
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 576px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    main {
+        width: 95%;
+    }
+}
